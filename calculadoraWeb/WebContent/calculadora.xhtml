@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<title>Calculadora - Soma, Multiplicação, Subtração e Divisão</title>
+</h:head>
+
+<h:body>
+	<h:form>
+	
+		<h:outputLabel value="Valor A: "/>
+		<h:inputText value="#{calculadoraMB.a}"/><br/>
+		
+		<h:outputLabel value="Valor B: "/>
+		<h:inputText value="#{calculadoraMB.b}"/><br/>
+		
+		<h:commandButton action="#{calculadoraMB.soma}" value="Soma"/>
+		<h:commandButton action="#{calculadoraMB.subtracao}" value="Subtração"/>
+		<h:commandButton action="#{calculadoraMB.multiplicacao}" value="Multiplicação"/>
+		<h:commandButton action="#{calculadoraMB.divisao}" value="Divisão"/><br/>
+		
+		<h:outputLabel value="Resultado: "/>
+		<h:inputText value="#{calculadoraMB.resultado}"/>		
+	
+	</h:form>
+</h:body>
+</html>
